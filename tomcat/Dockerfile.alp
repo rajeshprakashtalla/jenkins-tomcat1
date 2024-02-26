@@ -1,3 +1,5 @@
 FROM tomcat:8.0-alpine
 EXPOSE 8080
+COPY ./tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
 CMD ["catalina.sh", "run"]
+
